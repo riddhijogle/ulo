@@ -1,8 +1,8 @@
 import React from 'react';
 import { Router } from '@reach/router';
 import logo from './logo.svg';
-import './App.css';
-import  Workbook from './pages/Workbook'
+import './App.scss';
+import Workbook from './pages/Workbook'
 import Database from './pages/Database'
 import ServiceNow from './pages/Servicenow'
 import ResponsiveNavigation from './components/ResponsiveNavigation'
@@ -32,6 +32,7 @@ const navlinks =[
       <ResponsiveNavigation
       navlinks={ navlinks }
       logo={ logo }
+      
       />
       <Router>
        <Workbook path="/workbook" /> 
